@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="MyCalorieTracker.app" target="11" />
+      <module name="MyCalorieTracker.buildSrc" target="11" />
+      <module name="MyCalorieTracker.core" target="11" />
+      <module name="MyCalorieTracker.onboarding.onboarding_domain" target="11" />
+      <module name="MyCalorieTracker.onboarding.onboarding_presentation" target="11" />
+      <module name="MyCalorieTracker.tracker.tracker_data" target="11" />
+      <module name="MyCalorieTracker.tracker.tracker_domain" target="11" />
+      <module name="MyCalorieTracker.tracker.tracker_presentation" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
