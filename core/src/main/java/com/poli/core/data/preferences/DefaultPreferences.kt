@@ -29,10 +29,10 @@ class DefaultPreferences(
             .putFloat(Preferences.KEY_WEIGHT, weight)
             .apply()    }
 
-    override fun saveHeight(height: Float) {
+    override fun saveHeight(height: Int) {
         sharedPref
             .edit()
-            .putFloat(Preferences.KEY_HEIGHT, height)
+            .putInt(Preferences.KEY_HEIGHT, height)
             .apply()    }
 
     override fun saveActivityLevel(level: ActivityLevel) {
