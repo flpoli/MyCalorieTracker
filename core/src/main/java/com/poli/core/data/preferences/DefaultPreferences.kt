@@ -6,6 +6,7 @@ import com.poli.core.domain.model.Gender
 import com.poli.core.domain.model.GoalType
 import com.poli.core.domain.model.UserInfo
 import com.poli.core.domain.preferences.Preferences
+import com.poli.core.domain.preferences.Preferences.Companion.KEY_SHOULD_SHOW_ONBOARDING
 
 class DefaultPreferences(
     private val sharedPref: SharedPreferences
@@ -89,5 +90,16 @@ class DefaultPreferences(
             fatRatio = fatRatio
             )
 
+    }
+
+    override fun saveShouldShowOnboarding(shouldShow: Boolean) {
+        sharedPref.edit()
+            .putBoolean(Preferences.KEY_SHOULD_SHOW_ONBOARDING, shouldShow)
+            .apply()
+    }
+
+    override fun loadShouldShowOnboarding(): Boolean {
+
+        return sharedPref.getBoolean(KEY_SHOULD_SHOW_ONBOARDING, true)
     }
 }
