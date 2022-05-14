@@ -7,449 +7,449 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class Nutriments(
     @Json(name = "acide-alpha-linolenique-omega-3")
-    val acideAlphaLinoleniqueOmega3: Double?,
+    val acideAlphaLinoleniqueOmega3: Double,
     @Json(name = "acide-alpha-linolenique-omega-3_100g")
-    val acideAlphaLinoleniqueOmega3100g: Double?,
+    val acideAlphaLinoleniqueOmega3100g: Double,
     @Json(name = "acide-alpha-linolenique-omega-3_label")
-    val acideAlphaLinoleniqueOmega3Label: String?,
+    val acideAlphaLinoleniqueOmega3Label: String,
     @Json(name = "acide-alpha-linolenique-omega-3_serving")
-    val acideAlphaLinoleniqueOmega3Serving: Double?,
+    val acideAlphaLinoleniqueOmega3Serving: Double,
     @Json(name = "acide-alpha-linolenique-omega-3_unit")
-    val acideAlphaLinoleniqueOmega3Unit: String?,
+    val acideAlphaLinoleniqueOmega3Unit: String,
     @Json(name = "acide-alpha-linolenique-omega-3_value")
-    val acideAlphaLinoleniqueOmega3Value: Double?,
+    val acideAlphaLinoleniqueOmega3Value: Double,
     @Json(name = "alcohol")
-    val alcohol: Int?,
+    val alcohol: Int,
     @Json(name = "alcohol_100g")
-    val alcohol100g: Int?,
+    val alcohol100g: Int,
     @Json(name = "alcohol_serving")
-    val alcoholServing: Int?,
+    val alcoholServing: Int,
     @Json(name = "alcohol_unit")
-    val alcoholUnit: String?,
+    val alcoholUnit: String,
     @Json(name = "alcohol_value")
-    val alcoholValue: Int?,
+    val alcoholValue: Int,
     @Json(name = "alpha-linolenic-acid")
-    val alphaLinolenicAcid: Int?,
+    val alphaLinolenicAcid: Int,
     @Json(name = "alpha-linolenic-acid_100g")
-    val alphaLinolenicAcid100g: Int?,
+    val alphaLinolenicAcid100g: Int,
     @Json(name = "alpha-linolenic-acid_serving")
-    val alphaLinolenicAcidServing: Int?,
+    val alphaLinolenicAcidServing: Int,
     @Json(name = "alpha-linolenic-acid_unit")
-    val alphaLinolenicAcidUnit: String?,
+    val alphaLinolenicAcidUnit: String,
     @Json(name = "alpha-linolenic-acid_value")
-    val alphaLinolenicAcidValue: Int?,
+    val alphaLinolenicAcidValue: Int,
     @Json(name = "calcium")
-    val calcium: Double?,
+    val calcium: Double,
     @Json(name = "calcium_100g")
-    val calcium100g: Double?,
+    val calcium100g: Double,
     @Json(name = "calcium_label")
-    val calciumLabel: String?,
+    val calciumLabel: String,
     @Json(name = "calcium_serving")
-    val calciumServing: Double?,
+    val calciumServing: Double,
     @Json(name = "calcium_unit")
-    val calciumUnit: String?,
+    val calciumUnit: String,
     @Json(name = "calcium_value")
-    val calciumValue: Double?,
+    val calciumValue: Double,
     @Json(name = "carbohydrates")
-    val carbohydrates: Double?,
+    val carbohydrates: Double,
     @Json(name = "carbohydrates_100g")
-    val carbohydrates100g: Double?,
+    val carbohydrates100g: Double,
     @Json(name = "carbohydrates_prepared_unit")
-    val carbohydratesPreparedUnit: String?,
+    val carbohydratesPreparedUnit: String,
     @Json(name = "carbohydrates_serving")
-    val carbohydratesServing: Double?,
+    val carbohydratesServing: Double,
     @Json(name = "carbohydrates_unit")
-    val carbohydratesUnit: String?,
+    val carbohydratesUnit: String,
     @Json(name = "carbohydrates_value")
-    val carbohydratesValue: Double?,
+    val carbohydratesValue: Double,
     @Json(name = "carbon-footprint-from-known-ingredients_100g")
-    val carbonFootprintFromKnownIngredients100g: Double?,
+    val carbonFootprintFromKnownIngredients100g: Double,
     @Json(name = "carbon-footprint-from-known-ingredients_product")
-    val carbonFootprintFromKnownIngredientsProduct: Double?,
+    val carbonFootprintFromKnownIngredientsProduct: Double,
     @Json(name = "carbon-footprint-from-known-ingredients_serving")
-    val carbonFootprintFromKnownIngredientsServing: Double?,
+    val carbonFootprintFromKnownIngredientsServing: Double,
     @Json(name = "cholesterol")
-    val cholesterol: Int?,
+    val cholesterol: Int,
     @Json(name = "cholesterol_100g")
-    val cholesterol100g: Int?,
+    val cholesterol100g: Int,
     @Json(name = "cholesterol_unit")
-    val cholesterolUnit: String?,
+    val cholesterolUnit: String,
     @Json(name = "cholesterol_value")
-    val cholesterolValue: Int?,
+    val cholesterolValue: Int,
     @Json(name = "cocoa")
-    val cocoa: Double?,
+    val cocoa: Double,
     @Json(name = "cocoa_100g")
-    val cocoa100g: Double?,
+    val cocoa100g: Double,
     @Json(name = "cocoa_label")
-    val cocoaLabel: String?,
+    val cocoaLabel: String,
     @Json(name = "cocoa_serving")
-    val cocoaServing: Double?,
+    val cocoaServing: Double,
     @Json(name = "cocoa_unit")
-    val cocoaUnit: String?,
+    val cocoaUnit: String,
     @Json(name = "cocoa_value")
-    val cocoaValue: Double?,
+    val cocoaValue: Double,
     @Json(name = "energy")
-    val energy: Int?,
+    val energy: Int,
     @Json(name = "energy_100g")
-    val energy100g: Int?,
+    val energy100g: Int,
     @Json(name = "energy-kcal")
-    val energyKcal: Double?,
+    val energyKcal: Double,
     @Json(name = "energy-kcal_100g")
-    val energyKcal100g: Double?,
+    val energyKcal100g: Double,
     @Json(name = "energy-kcal_prepared_unit")
-    val energyKcalPreparedUnit: String?,
+    val energyKcalPreparedUnit: String,
     @Json(name = "energy-kcal_serving")
-    val energyKcalServing: Double?,
+    val energyKcalServing: Double,
     @Json(name = "energy-kcal_unit")
-    val energyKcalUnit: String?,
+    val energyKcalUnit: String,
     @Json(name = "energy-kcal_value")
-    val energyKcalValue: Double?,
+    val energyKcalValue: Double,
     @Json(name = "energy-kj")
-    val energyKj: Int?,
+    val energyKj: Int,
     @Json(name = "energy-kj_100g")
-    val energyKj100g: Int?,
+    val energyKj100g: Int,
     @Json(name = "energy-kj_prepared_unit")
-    val energyKjPreparedUnit: String?,
+    val energyKjPreparedUnit: String,
     @Json(name = "energy-kj_serving")
-    val energyKjServing: Double?,
+    val energyKjServing: Double,
     @Json(name = "energy-kj_unit")
-    val energyKjUnit: String?,
+    val energyKjUnit: String,
     @Json(name = "energy-kj_value")
-    val energyKjValue: Int?,
+    val energyKjValue: Int,
     @Json(name = "energy_prepared_unit")
-    val energyPreparedUnit: String?,
+    val energyPreparedUnit: String,
     @Json(name = "energy_serving")
-    val energyServing: Double?,
+    val energyServing: Double,
     @Json(name = "energy_unit")
-    val energyUnit: String?,
+    val energyUnit: String,
     @Json(name = "energy_value")
-    val energyValue: Double?,
+    val energyValue: Double,
     @Json(name = "fat")
-    val fat: Double?,
+    val fat: Double,
     @Json(name = "fat_100g")
-    val fat100g: Double?,
+    val fat100g: Double,
     @Json(name = "fat_prepared_unit")
-    val fatPreparedUnit: String?,
+    val fatPreparedUnit: String,
     @Json(name = "fat_serving")
-    val fatServing: Double?,
+    val fatServing: Double,
     @Json(name = "fat_unit")
-    val fatUnit: String?,
+    val fatUnit: String,
     @Json(name = "fat_value")
-    val fatValue: Double?,
+    val fatValue: Double,
     @Json(name = "fiber")
-    val fiber: Double?,
+    val fiber: Double,
     @Json(name = "fiber_100g")
-    val fiber100g: Double?,
+    val fiber100g: Double,
     @Json(name = "fiber_prepared_unit")
-    val fiberPreparedUnit: String?,
+    val fiberPreparedUnit: String,
     @Json(name = "fiber_serving")
-    val fiberServing: Double?,
+    val fiberServing: Double,
     @Json(name = "fiber_unit")
-    val fiberUnit: String?,
+    val fiberUnit: String,
     @Json(name = "fiber_value")
-    val fiberValue: Double?,
+    val fiberValue: Double,
     @Json(name = "fruits-vegetables-nuts")
-    val fruitsVegetablesNuts: Double?,
+    val fruitsVegetablesNuts: Double,
     @Json(name = "fruits-vegetables-nuts_100g")
-    val fruitsVegetablesNuts100g: Double?,
+    val fruitsVegetablesNuts100g: Double,
     @Json(name = "fruits-vegetables-nuts-estimate")
-    val fruitsVegetablesNutsEstimate: Int?,
+    val fruitsVegetablesNutsEstimate: Int,
     @Json(name = "fruits-vegetables-nuts-estimate_100g")
-    val fruitsVegetablesNutsEstimate100g: Int?,
+    val fruitsVegetablesNutsEstimate100g: Int,
     @Json(name = "fruits-vegetables-nuts-estimate-from-ingredients_100g")
-    val fruitsVegetablesNutsEstimateFromIngredients100g: Double?,
+    val fruitsVegetablesNutsEstimateFromIngredients100g: Double,
     @Json(name = "fruits-vegetables-nuts-estimate-from-ingredients_serving")
-    val fruitsVegetablesNutsEstimateFromIngredientsServing: Double?,
+    val fruitsVegetablesNutsEstimateFromIngredientsServing: Double,
     @Json(name = "fruits-vegetables-nuts-estimate_label")
-    val fruitsVegetablesNutsEstimateLabel: String?,
+    val fruitsVegetablesNutsEstimateLabel: String,
     @Json(name = "fruits-vegetables-nuts-estimate_serving")
-    val fruitsVegetablesNutsEstimateServing: Int?,
+    val fruitsVegetablesNutsEstimateServing: Int,
     @Json(name = "fruits-vegetables-nuts-estimate_unit")
-    val fruitsVegetablesNutsEstimateUnit: String?,
+    val fruitsVegetablesNutsEstimateUnit: String,
     @Json(name = "fruits-vegetables-nuts-estimate_value")
-    val fruitsVegetablesNutsEstimateValue: Int?,
+    val fruitsVegetablesNutsEstimateValue: Int,
     @Json(name = "fruits-vegetables-nuts_label")
-    val fruitsVegetablesNutsLabel: String?,
+    val fruitsVegetablesNutsLabel: String,
     @Json(name = "fruits-vegetables-nuts_serving")
-    val fruitsVegetablesNutsServing: Double?,
+    val fruitsVegetablesNutsServing: Double,
     @Json(name = "fruits-vegetables-nuts_unit")
-    val fruitsVegetablesNutsUnit: String?,
+    val fruitsVegetablesNutsUnit: String,
     @Json(name = "fruits-vegetables-nuts_value")
-    val fruitsVegetablesNutsValue: Double?,
+    val fruitsVegetablesNutsValue: Double,
     @Json(name = "iron")
-    val iron: Double?,
+    val iron: Double,
     @Json(name = "iron_100g")
-    val iron100g: Double?,
+    val iron100g: Double,
     @Json(name = "iron_label")
-    val ironLabel: String?,
+    val ironLabel: String,
     @Json(name = "iron_serving")
-    val ironServing: Double?,
+    val ironServing: Double,
     @Json(name = "iron_unit")
-    val ironUnit: String?,
+    val ironUnit: String,
     @Json(name = "iron_value")
-    val ironValue: Double?,
+    val ironValue: Double,
     @Json(name = "magnesium")
-    val magnesium: Double?,
+    val magnesium: Double,
     @Json(name = "magnesium_100g")
-    val magnesium100g: Double?,
+    val magnesium100g: Double,
     @Json(name = "magnesium_label")
-    val magnesiumLabel: String?,
+    val magnesiumLabel: String,
     @Json(name = "magnesium_serving")
-    val magnesiumServing: Double?,
+    val magnesiumServing: Double,
     @Json(name = "magnesium_unit")
-    val magnesiumUnit: String?,
+    val magnesiumUnit: String,
     @Json(name = "magnesium_value")
-    val magnesiumValue: Double?,
+    val magnesiumValue: Double,
     @Json(name = "monounsaturated-fat")
-    val monounsaturatedFat: Double?,
+    val monounsaturatedFat: Double,
     @Json(name = "monounsaturated-fat_100g")
-    val monounsaturatedFat100g: Double?,
+    val monounsaturatedFat100g: Double,
     @Json(name = "monounsaturated-fat_label")
-    val monounsaturatedFatLabel: String?,
+    val monounsaturatedFatLabel: String,
     @Json(name = "monounsaturated-fat_serving")
-    val monounsaturatedFatServing: Double?,
+    val monounsaturatedFatServing: Double,
     @Json(name = "monounsaturated-fat_unit")
-    val monounsaturatedFatUnit: String?,
+    val monounsaturatedFatUnit: String,
     @Json(name = "monounsaturated-fat_value")
-    val monounsaturatedFatValue: Double?,
+    val monounsaturatedFatValue: Double,
     @Json(name = "nova-group")
-    val novaGroup: Int?,
+    val novaGroup: Int,
     @Json(name = "nova-group_100g")
-    val novaGroup100g: Int?,
+    val novaGroup100g: Int,
     @Json(name = "nova-group_serving")
-    val novaGroupServing: Int?,
+    val novaGroupServing: Int,
     @Json(name = "nutrition-score-fr")
-    val nutritionScoreFr: Int?,
+    val nutritionScoreFr: Int,
     @Json(name = "nutrition-score-fr_100g")
-    val nutritionScoreFr100g: Int?,
+    val nutritionScoreFr100g: Int,
     @Json(name = "pantothenic-acid")
-    val pantothenicAcid: Double?,
+    val pantothenicAcid: Double,
     @Json(name = "pantothenic-acid_100g")
-    val pantothenicAcid100g: Double?,
+    val pantothenicAcid100g: Double,
     @Json(name = "pantothenic-acid_label")
-    val pantothenicAcidLabel: String?,
+    val pantothenicAcidLabel: String,
     @Json(name = "pantothenic-acid_serving")
-    val pantothenicAcidServing: Double?,
+    val pantothenicAcidServing: Double,
     @Json(name = "pantothenic-acid_unit")
-    val pantothenicAcidUnit: String?,
+    val pantothenicAcidUnit: String,
     @Json(name = "pantothenic-acid_value")
-    val pantothenicAcidValue: Double?,
+    val pantothenicAcidValue: Double,
     @Json(name = "phosphorus")
-    val phosphorus: Double?,
+    val phosphorus: Double,
     @Json(name = "phosphorus_100g")
-    val phosphorus100g: Double?,
+    val phosphorus100g: Double,
     @Json(name = "phosphorus_unit")
-    val phosphorusUnit: String?,
+    val phosphorusUnit: String,
     @Json(name = "phosphorus_value")
-    val phosphorusValue: Int?,
+    val phosphorusValue: Int,
     @Json(name = "polyols")
-    val polyols: Int?,
+    val polyols: Int,
     @Json(name = "polyols_100g")
-    val polyols100g: Int?,
+    val polyols100g: Int,
     @Json(name = "polyols_label")
-    val polyolsLabel: String?,
+    val polyolsLabel: String,
     @Json(name = "polyols_serving")
-    val polyolsServing: Double?,
+    val polyolsServing: Double,
     @Json(name = "polyols_unit")
-    val polyolsUnit: String?,
+    val polyolsUnit: String,
     @Json(name = "polyols_value")
-    val polyolsValue: Int?,
+    val polyolsValue: Int,
     @Json(name = "polyunsaturated-fat")
-    val polyunsaturatedFat: Double?,
+    val polyunsaturatedFat: Double,
     @Json(name = "polyunsaturated-fat_100g")
-    val polyunsaturatedFat100g: Double?,
+    val polyunsaturatedFat100g: Double,
     @Json(name = "polyunsaturated-fat_label")
-    val polyunsaturatedFatLabel: String?,
+    val polyunsaturatedFatLabel: String,
     @Json(name = "polyunsaturated-fat_serving")
-    val polyunsaturatedFatServing: Double?,
+    val polyunsaturatedFatServing: Double,
     @Json(name = "polyunsaturated-fat_unit")
-    val polyunsaturatedFatUnit: String?,
+    val polyunsaturatedFatUnit: String,
     @Json(name = "polyunsaturated-fat_value")
-    val polyunsaturatedFatValue: Double?,
+    val polyunsaturatedFatValue: Double,
     @Json(name = "proteins")
-    val proteins: Double?,
+    val proteins: Double,
     @Json(name = "proteins_100g")
-    val proteins100g: Double?,
+    val proteins100g: Double,
     @Json(name = "proteins_prepared_unit")
-    val proteinsPreparedUnit: String?,
+    val proteinsPreparedUnit: String,
     @Json(name = "proteins_serving")
-    val proteinsServing: Double?,
+    val proteinsServing: Double,
     @Json(name = "proteins_unit")
-    val proteinsUnit: String?,
+    val proteinsUnit: String,
     @Json(name = "proteins_value")
-    val proteinsValue: Double?,
+    val proteinsValue: Double,
     @Json(name = "salt")
-    val salt: Double?,
+    val salt: Double,
     @Json(name = "salt_100g")
-    val salt100g: Double?,
+    val salt100g: Double,
     @Json(name = "salt_prepared_unit")
-    val saltPreparedUnit: String?,
+    val saltPreparedUnit: String,
     @Json(name = "salt_serving")
-    val saltServing: Double?,
+    val saltServing: Double,
     @Json(name = "salt_unit")
-    val saltUnit: String?,
+    val saltUnit: String,
     @Json(name = "salt_value")
-    val saltValue: Double?,
+    val saltValue: Double,
     @Json(name = "saturated-fat")
-    val saturatedFat: Double?,
+    val saturatedFat: Double,
     @Json(name = "saturated-fat_100g")
-    val saturatedFat100g: Double?,
+    val saturatedFat100g: Double,
     @Json(name = "saturated-fat_prepared_unit")
-    val saturatedFatPreparedUnit: String?,
+    val saturatedFatPreparedUnit: String,
     @Json(name = "saturated-fat_serving")
-    val saturatedFatServing: Double?,
+    val saturatedFatServing: Double,
     @Json(name = "saturated-fat_unit")
-    val saturatedFatUnit: String?,
+    val saturatedFatUnit: String,
     @Json(name = "saturated-fat_value")
-    val saturatedFatValue: Double?,
+    val saturatedFatValue: Double,
     @Json(name = "sodium")
-    val sodium: Double?,
+    val sodium: Double,
     @Json(name = "sodium_100g")
-    val sodium100g: Double?,
+    val sodium100g: Double,
     @Json(name = "sodium_prepared_unit")
-    val sodiumPreparedUnit: String?,
+    val sodiumPreparedUnit: String,
     @Json(name = "sodium_serving")
-    val sodiumServing: Double?,
+    val sodiumServing: Double,
     @Json(name = "sodium_unit")
-    val sodiumUnit: String?,
+    val sodiumUnit: String,
     @Json(name = "sodium_value")
-    val sodiumValue: Double?,
+    val sodiumValue: Double,
     @Json(name = "sugars")
-    val sugars: Double?,
+    val sugars: Double,
     @Json(name = "sugars_100g")
-    val sugars100g: Double?,
+    val sugars100g: Double,
     @Json(name = "sugars_modifier")
-    val sugarsModifier: String?,
+    val sugarsModifier: String,
     @Json(name = "sugars_prepared_unit")
-    val sugarsPreparedUnit: String?,
+    val sugarsPreparedUnit: String,
     @Json(name = "sugars_serving")
-    val sugarsServing: Double?,
+    val sugarsServing: Double,
     @Json(name = "sugars_unit")
-    val sugarsUnit: String?,
+    val sugarsUnit: String,
     @Json(name = "sugars_value")
-    val sugarsValue: Double?,
+    val sugarsValue: Double,
     @Json(name = "trans-fat")
-    val transFat: Double?,
+    val transFat: Double,
     @Json(name = "trans-fat_100g")
-    val transFat100g: Double?,
+    val transFat100g: Double,
     @Json(name = "trans-fat_label")
-    val transFatLabel: String?,
+    val transFatLabel: String,
     @Json(name = "trans-fat_serving")
-    val transFatServing: Double?,
+    val transFatServing: Double,
     @Json(name = "trans-fat_unit")
-    val transFatUnit: String?,
+    val transFatUnit: String,
     @Json(name = "trans-fat_value")
-    val transFatValue: Double?,
+    val transFatValue: Double,
     @Json(name = "vitamin-a")
-    val vitaminA: Int?,
+    val vitaminA: Int,
     @Json(name = "vitamin-a_100g")
-    val vitaminA100g: Int?,
+    val vitaminA100g: Int,
     @Json(name = "vitamin-a_unit")
-    val vitaminAUnit: String?,
+    val vitaminAUnit: String,
     @Json(name = "vitamin-a_value")
-    val vitaminAValue: Int?,
+    val vitaminAValue: Int,
     @Json(name = "vitamin-b1")
-    val vitaminB1: Double?,
+    val vitaminB1: Double,
     @Json(name = "vitamin-b1_100g")
-    val vitaminB1100g: Double?,
+    val vitaminB1100g: Double,
     @Json(name = "vitamin-b12")
-    val vitaminB12: Int?,
+    val vitaminB12: Int,
     @Json(name = "vitamin-b12_100g")
-    val vitaminB12100g: Int?,
+    val vitaminB12100g: Int,
     @Json(name = "vitamin-b12_label")
-    val vitaminB12Label: String?,
+    val vitaminB12Label: String,
     @Json(name = "vitamin-b12_serving")
-    val vitaminB12Serving: Int?,
+    val vitaminB12Serving: Int,
     @Json(name = "vitamin-b12_unit")
-    val vitaminB12Unit: String?,
+    val vitaminB12Unit: String,
     @Json(name = "vitamin-b12_value")
-    val vitaminB12Value: Int?,
+    val vitaminB12Value: Int,
     @Json(name = "vitamin-b1_label")
-    val vitaminB1Label: String?,
+    val vitaminB1Label: String,
     @Json(name = "vitamin-b1_serving")
-    val vitaminB1Serving: Double?,
+    val vitaminB1Serving: Double,
     @Json(name = "vitamin-b1_unit")
-    val vitaminB1Unit: String?,
+    val vitaminB1Unit: String,
     @Json(name = "vitamin-b1_value")
-    val vitaminB1Value: Double?,
+    val vitaminB1Value: Double,
     @Json(name = "vitamin-b2")
-    val vitaminB2: Double?,
+    val vitaminB2: Double,
     @Json(name = "vitamin-b2_100g")
-    val vitaminB2100g: Double?,
+    val vitaminB2100g: Double,
     @Json(name = "vitamin-b2_label")
-    val vitaminB2Label: String?,
+    val vitaminB2Label: String,
     @Json(name = "vitamin-b2_serving")
-    val vitaminB2Serving: Double?,
+    val vitaminB2Serving: Double,
     @Json(name = "vitamin-b2_unit")
-    val vitaminB2Unit: String?,
+    val vitaminB2Unit: String,
     @Json(name = "vitamin-b2_value")
-    val vitaminB2Value: Double?,
+    val vitaminB2Value: Double,
     @Json(name = "vitamin-b6")
-    val vitaminB6: Double?,
+    val vitaminB6: Double,
     @Json(name = "vitamin-b6_100g")
-    val vitaminB6100g: Double?,
+    val vitaminB6100g: Double,
     @Json(name = "vitamin-b6_label")
-    val vitaminB6Label: String?,
+    val vitaminB6Label: String,
     @Json(name = "vitamin-b6_serving")
-    val vitaminB6Serving: Double?,
+    val vitaminB6Serving: Double,
     @Json(name = "vitamin-b6_unit")
-    val vitaminB6Unit: String?,
+    val vitaminB6Unit: String,
     @Json(name = "vitamin-b6_value")
-    val vitaminB6Value: Double?,
+    val vitaminB6Value: Double,
     @Json(name = "vitamin-b9")
-    val vitaminB9: Double?,
+    val vitaminB9: Double,
     @Json(name = "vitamin-b9_100g")
-    val vitaminB9100g: Double?,
+    val vitaminB9100g: Double,
     @Json(name = "vitamin-b9_label")
-    val vitaminB9Label: String?,
+    val vitaminB9Label: String,
     @Json(name = "vitamin-b9_serving")
-    val vitaminB9Serving: Double?,
+    val vitaminB9Serving: Double,
     @Json(name = "vitamin-b9_unit")
-    val vitaminB9Unit: String?,
+    val vitaminB9Unit: String,
     @Json(name = "vitamin-b9_value")
-    val vitaminB9Value: Int?,
+    val vitaminB9Value: Int,
     @Json(name = "vitamin-c")
-    val vitaminC: Int?,
+    val vitaminC: Int,
     @Json(name = "vitamin-c_100g")
-    val vitaminC100g: Int?,
+    val vitaminC100g: Int,
     @Json(name = "vitamin-c_unit")
-    val vitaminCUnit: String?,
+    val vitaminCUnit: String,
     @Json(name = "vitamin-c_value")
-    val vitaminCValue: Int?,
+    val vitaminCValue: Int,
     @Json(name = "vitamin-d")
-    val vitaminD: Double?,
+    val vitaminD: Double,
     @Json(name = "vitamin-d_100g")
-    val vitaminD100g: Double?,
+    val vitaminD100g: Double,
     @Json(name = "vitamin-d_label")
-    val vitaminDLabel: String?,
+    val vitaminDLabel: String,
     @Json(name = "vitamin-d_serving")
-    val vitaminDServing: Double?,
+    val vitaminDServing: Double,
     @Json(name = "vitamin-d_unit")
-    val vitaminDUnit: String?,
+    val vitaminDUnit: String,
     @Json(name = "vitamin-d_value")
-    val vitaminDValue: Double?,
+    val vitaminDValue: Double,
     @Json(name = "vitamin-e")
-    val vitaminE: Double?,
+    val vitaminE: Double,
     @Json(name = "vitamin-e_100g")
-    val vitaminE100g: Double?,
+    val vitaminE100g: Double,
     @Json(name = "vitamin-e_label")
-    val vitaminELabel: String?,
+    val vitaminELabel: String,
     @Json(name = "vitamin-e_serving")
-    val vitaminEServing: Double?,
+    val vitaminEServing: Double,
     @Json(name = "vitamin-e_unit")
-    val vitaminEUnit: String?,
+    val vitaminEUnit: String,
     @Json(name = "vitamin-e_value")
-    val vitaminEValue: Double?,
+    val vitaminEValue: Double,
     @Json(name = "vitamin-pp")
-    val vitaminPp: Double?,
+    val vitaminPp: Double,
     @Json(name = "vitamin-pp_100g")
-    val vitaminPp100g: Double?,
+    val vitaminPp100g: Double,
     @Json(name = "vitamin-pp_label")
-    val vitaminPpLabel: String?,
+    val vitaminPpLabel: String,
     @Json(name = "vitamin-pp_serving")
-    val vitaminPpServing: Double?,
+    val vitaminPpServing: Double,
     @Json(name = "vitamin-pp_unit")
-    val vitaminPpUnit: String?,
+    val vitaminPpUnit: String,
     @Json(name = "vitamin-pp_value")
-    val vitaminPpValue: Int?
+    val vitaminPpValue: Int
 )

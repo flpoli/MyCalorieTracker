@@ -16,7 +16,7 @@ data class TrackedFoodEntity(
     val imageUrl: String?,
     val type: String,
     val amount: Int,
-
+    val calories: Int,
     val dayOfMonth: Int,
     val month: Int,
     val year: Int
