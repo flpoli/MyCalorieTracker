@@ -23,13 +23,12 @@ import com.poli.core.util.UiEvent
 import com.poli.core_ui.LocalSpacing
 import com.poli.core.R
 import com.poli.core.domain.model.ActivityLevel
-import com.poli.core.domain.model.Gender
 import com.poli.onboarding_presentation.components.ActionButton
 import com.poli.onboarding_presentation.components.SelectableButton
 
 @Composable
 fun ActivityScreen(
-    onNavigate: (UiEvent.Navigate) -> Unit,
+    onNextClick: () -> Unit,
     viewModel: ActivityViewModel = hiltViewModel()
 ){
     
@@ -42,7 +41,7 @@ fun ActivityScreen(
             event ->
                 when(event){
 
-                    is UiEvent.Navigate -> onNavigate(event)
+                    is UiEvent.Success -> onNextClick()
                     else -> Unit
 
                 }

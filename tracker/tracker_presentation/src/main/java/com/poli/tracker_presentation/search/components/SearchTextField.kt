@@ -22,13 +22,14 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.focus.FocusState
 import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import com.poli.core.util.UiText
-import com.poli.core.R
 import com.poli.core_ui.LocalSpacing
+import com.poli.core.R
 
 @Composable
 fun SearchTextField(
@@ -36,65 +37,60 @@ fun SearchTextField(
     onValueChange: (String) -> Unit,
     onSearch: () -> Unit,
     modifier: Modifier = Modifier,
-    hint: String = stringResource(R.string.search),
+    hint: String = stringResource(id = R.string.search),
     shouldShowHint: Boolean = false,
     onFocusChanged: (FocusState) -> Unit
-){
-
-        val spacing = LocalSpacing.current
-
-        Box(
-            modifier = modifier
-        ){
-
-            BasicTextField(
-                value = text,
-                onValueChange = onValueChange,
-                singleLine = true,
-                keyboardActions = KeyboardActions(
-
-                    onSearch = {
-                        onSearch()
-                        defaultKeyboardAction(ImeAction.Search)
-                    }
-                ),
-                keyboardOptions = KeyboardOptions(
-                    imeAction = ImeAction.Search
-                ),
+) {
+    val spacing = LocalSpacing.current
+    Box(
+        modifier = modifier
+    ) {
+        BasicTextField(
+            value = text,
+            onValueChange = onValueChange,
+            singleLine = true,
+            keyboardActions = KeyboardActions(
+                onSearch = {
+                    onSearch()
+                    defaultKeyboardAction(ImeAction.Search)
+                }
+            ),
+            keyboardOptions = KeyboardOptions(
+                imeAction = ImeAction.Search,
+            ),
+            modifier = Modifier
+                .clip(RoundedCornerShape(5.dp))
+                .padding(2.dp)
+                .shadow(
+                    elevation = 2.dp,
+                    shape = RoundedCornerShape(5.dp)
+                )
+                .background(MaterialTheme.colors.surface)
+                .fillMaxWidth()
+                .padding(spacing.spaceMedium)
+                .padding(end = spacing.spaceMedium)
+                .onFocusChanged { onFocusChanged(it) }
+                .testTag("search_textfield")
+        )
+        if(shouldShowHint) {
+            Text(
+                text = hint,
+                style = MaterialTheme.typography.body1,
+                fontWeight = FontWeight.Light,
+                color = Color.LightGray,
                 modifier = Modifier
-                    .clip(RoundedCornerShape(5.dp))
-                    .padding(2.dp)
-                    .shadow(elevation = 2.dp, shape = RoundedCornerShape(5.dp))
-                    .background(MaterialTheme.colors.surface)
-                    .fillMaxWidth()
-                    .padding(spacing.spaceMedium)
-                    .padding(end = spacing.spaceMedium)
-                    .onFocusChanged { onFocusChanged(it) }
-                )
-
-            if(shouldShowHint){
-                Text(
-                    text = hint,
-                    style = MaterialTheme.typography.body1,
-                    fontWeight = FontWeight.Light,
-                    color = Color.LightGray,
-                    modifier = Modifier
-                        .align(Alignment.CenterStart)
-                        .padding(start = spacing.spaceMedium)
-                )
-            }
-
-            IconButton(
-                onClick = onSearch,
-                modifier = Modifier.align(Alignment.CenterEnd)
-            ) {
-
-                Icon(
-                    imageVector = Icons.Default.Search,
-                    contentDescription = stringResource(id = R.string.search)
-                )
-
-            }
-
+                    .align(Alignment.CenterStart)
+                    .padding(start = spacing.spaceMedium)
+            )
         }
+        IconButton(
+            onClick = onSearch,
+            modifier = Modifier.align(Alignment.CenterEnd)
+        ) {
+            Icon(
+                imageVector = Icons.Default.Search,
+                contentDescription = stringResource(id = R.string.search)
+            )
+        }
+    }
 }

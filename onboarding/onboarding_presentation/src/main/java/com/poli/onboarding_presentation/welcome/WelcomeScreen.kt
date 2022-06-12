@@ -1,6 +1,5 @@
 package com.poli.onboarding_presentation.welcome
 
-import android.content.Context
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -14,17 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
 import com.poli.core.R
-import com.poli.core.navigation.Route
-import com.poli.core.util.UiEvent
 import com.poli.core_ui.LocalSpacing
 import com.poli.onboarding_presentation.components.ActionButton
 
 
 @Composable
 fun WelcomeScreen(
-    onNavigate: (UiEvent.Navigate) -> Unit //Navigation callback
+    onNextClick: () -> Unit //Navigation callback
 ) {
 
     val context = LocalContext.current
@@ -44,7 +40,7 @@ fun WelcomeScreen(
 
         ActionButton(
             text = stringResource(R.string.next),
-            onClick = {onNavigate(UiEvent.Navigate(Route.GENDER))},
+            onClick = {onNextClick()},
             modifier = Modifier.align(Alignment.CenterHorizontally)
         )
     }

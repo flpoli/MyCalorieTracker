@@ -26,12 +26,12 @@ import com.poli.mycalorietracker.ui.theme.CarbColor
 import com.poli.mycalorietracker.ui.theme.FatColor
 import com.poli.mycalorietracker.ui.theme.ProteinColor
 import com.poli.tracker_presentation.components.UnitDisplay
-import com.poli.tracker_presentation.tracker_overview.TrackerOverViewState
+import com.poli.tracker_presentation.tracker_overview.TrackerOverviewState
 
 @Composable
 fun NutrientsHeader(
 
-    state: TrackerOverViewState,
+    state: TrackerOverviewState,
     modifier: Modifier = Modifier
 
 ){

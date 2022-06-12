@@ -26,7 +26,7 @@ import com.poli.onboarding_presentation.components.UnitTextField
 @Composable
 fun WeightScreen(
     scaffoldState: ScaffoldState,
-    onNavigate: (UiEvent.Navigate) -> Unit,
+    onNextClick: () -> Unit,
     viewModel: WeightViewModel = hiltViewModel()
 ) {
 
@@ -40,7 +40,7 @@ fun WeightScreen(
                 event ->
             when(event){
 
-                is UiEvent.Navigate -> onNavigate(event)
+                is UiEvent.Success -> onNextClick()
                 is UiEvent.ShowSnackbar -> {
 
                     scaffoldState.snackbarHostState.showSnackbar(

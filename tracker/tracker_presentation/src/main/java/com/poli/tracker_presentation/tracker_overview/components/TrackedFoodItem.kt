@@ -95,9 +95,7 @@ fun TrackedFoodItem(
                 overflow = TextOverflow.Ellipsis,
                 maxLines = 2
             )
-
             Spacer(modifier = Modifier.width(spacing.spaceExtraSmall))
-
             Text(
                 text = stringResource(
                     id = R.string.nutrient_info,
@@ -105,7 +103,6 @@ fun TrackedFoodItem(
                     trackedFood.calories
                     ),
                 style = MaterialTheme.typography.body2,
-
                 )
         }
 
@@ -124,9 +121,7 @@ fun TrackedFoodItem(
                     .clickable { onDeleteClick() }
 
             )
-
             Spacer(modifier = Modifier.width(spacing.spaceExtraSmall))
-
             Row(
                 verticalAlignment = Alignment.CenterVertically
             ){

@@ -1,4 +1,4 @@
-package com.poli.core.navigation
+package com.poli.mycalorietracker.navigation
 
 object Route {
 

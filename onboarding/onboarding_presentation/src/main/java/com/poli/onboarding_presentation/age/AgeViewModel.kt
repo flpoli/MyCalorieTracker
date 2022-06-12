@@ -7,10 +7,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.poli.core.domain.preferences.Preferences
 import com.poli.core.domain.usecase.FilterOutDigits
-import com.poli.core.navigation.Route
 import com.poli.core.util.UiEvent
 import com.poli.core.util.UiText
-import com.poli.onboarding_presentation.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
@@ -53,7 +51,7 @@ class AgeViewModel @Inject constructor(
 
             preferences.saveAge(ageNumber)
 
-            _uiEvent.send(UiEvent.Navigate(Route.HEIGHT))
+            _uiEvent.send(UiEvent.Success)
         }
 
     }

@@ -28,7 +28,7 @@ import com.poli.onboarding_presentation.components.SelectableButton
 
 @Composable
 fun GenderScreen(
-    onNavigate: (UiEvent.Navigate) -> Unit,
+    onNextClick: () -> Unit,
     viewModel: GenderViewModel = hiltViewModel()
 ){
     
@@ -41,7 +41,7 @@ fun GenderScreen(
             event ->
                 when(event){
 
-                    is UiEvent.Navigate -> onNavigate(event)
+                    is UiEvent.Success -> onNextClick()
                     else -> Unit
 
                 }

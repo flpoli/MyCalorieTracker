@@ -28,7 +28,7 @@ import com.poli.onboarding_presentation.components.SelectableButton
 
 @Composable
 fun GoalScreen(
-    onNavigate: (UiEvent.Navigate) -> Unit,
+    onNextClick: () -> Unit,
     viewModel: GoalViewModel = hiltViewModel()
 ){
     
@@ -41,7 +41,7 @@ fun GoalScreen(
             event ->
                 when(event){
 
-                    is UiEvent.Navigate -> onNavigate(event)
+                    is UiEvent.Success -> onNextClick()
                     else -> Unit
 
                 }

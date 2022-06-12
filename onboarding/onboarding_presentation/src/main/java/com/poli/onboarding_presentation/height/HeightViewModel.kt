@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.poli.core.domain.preferences.Preferences
 import com.poli.core.domain.usecase.FilterOutDigits
-import com.poli.core.navigation.Route
 import com.poli.core.util.UiEvent
 import com.poli.core.util.UiText
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -52,7 +51,7 @@ class HeightViewModel @Inject constructor(
 
             preferences.saveHeight(heightNumber)
 
-            _uiEvent.send(UiEvent.Navigate(Route.WEIGHT))
+            _uiEvent.send(UiEvent.Success)
         }
 
     }

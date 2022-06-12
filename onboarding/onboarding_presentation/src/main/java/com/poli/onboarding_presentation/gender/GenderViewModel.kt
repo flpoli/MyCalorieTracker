@@ -5,10 +5,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.poli.core.domain.model.Gender
 import com.poli.core.domain.preferences.Preferences
-import com.poli.core.navigation.Route
 import com.poli.core.util.UiEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
@@ -35,7 +33,7 @@ class GenderViewModel @Inject constructor(private val preferences: Preferences) 
         viewModelScope.launch {
 
             preferences.saveGender(selectedGender)
-            _uiEvent.send(UiEvent.Navigate(Route.AGE))
+            _uiEvent.send(UiEvent.Success)
 
         }
 

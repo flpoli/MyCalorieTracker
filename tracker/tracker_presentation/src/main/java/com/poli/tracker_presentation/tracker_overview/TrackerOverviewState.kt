@@ -3,7 +3,7 @@ package com.poli.tracker_presentation.tracker_overview
 import com.poli.tracker_domain.model.TrackedFood
 import java.time.LocalDate
 
-data class TrackerOverViewState (
+data class TrackerOverviewState (
 
     val totalCarbs: Int = 0,
     val totalProtein: Int = 0,

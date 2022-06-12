@@ -80,15 +80,13 @@ fun ExpandableMeal(
                         imageVector = if (meal.isExpanded) {
                             Icons.Default.KeyboardArrowUp
                         } else Icons.Default.KeyboardArrowDown,
-                        contentDescription = if(meal.isExpanded)
+                        contentDescription = if(meal.isExpanded) {
                             stringResource(id = R.string.collapse)
-                                else stringResource(id = R.string.extend)
+                        }else stringResource(id = R.string.extend)
 
                     )
                 }
-
-                Spacer(modifier = Modifier.width(spacing.spaceMedium))
-
+                Spacer(modifier = Modifier.width(spacing.spaceSmall))
                 Row(
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
@@ -101,21 +99,18 @@ fun ExpandableMeal(
                     )
 
                     Row {
-
                         NutrientInfo(
                             name = stringResource(id = R.string.carbs),
                             amount = meal.carbs,
                             unit = stringResource(id = R.string.grams)
                         )
                         Spacer(modifier = Modifier.width(spacing.spaceMedium))
-
                         NutrientInfo(
                             name = stringResource(id = R.string.protein),
                             amount = meal.protein,
                             unit = stringResource(id = R.string.grams)
                         )
                         Spacer(modifier = Modifier.width(spacing.spaceMedium))
-
                         NutrientInfo(
                             name = stringResource(id = R.string.fat),
                             amount = meal.fat,
@@ -127,9 +122,7 @@ fun ExpandableMeal(
             }
         }
         Spacer(modifier = Modifier.width(spacing.spaceMedium))
-        
         AnimatedVisibility(visible = meal.isExpanded ) {
-
             content()
         }
 
